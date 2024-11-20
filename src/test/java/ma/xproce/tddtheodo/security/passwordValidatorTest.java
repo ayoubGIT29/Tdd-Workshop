@@ -1,4 +1,4 @@
-package ma.xproce.tddtheodo.passwordValidation;
+package ma.xproce.tddtheodo.security;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -7,12 +7,12 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
 public class passwordValidatorTest {
-    private passwordValidator passwordValidator=new passwordValidator();
+    private passwordValidator passwordValidator;
 
-//    @BeforeEach
-//    void setUp() {
-//        passwordValidator=new passwordValidator();
-//    }
+    @BeforeEach
+    void setUp() {
+        passwordValidator=new passwordValidator();
+    }
 
     @ParameterizedTest
     @CsvSource({"Abcdefjh0@,true",

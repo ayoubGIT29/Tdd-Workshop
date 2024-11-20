@@ -1,4 +1,4 @@
-package ma.xproce.tddtheodo.passwordValidation;
+package ma.xproce.tddtheodo.security;
 
 public class passwordValidator {
     public boolean isValidPassword(String password) {
